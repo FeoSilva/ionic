@@ -86,8 +86,8 @@ export class SegmentButton {
    * @hidden
    * On click of a SegmentButton
    */
-  @HostListener('click')
-  onClick() {
+  @HostListener('tap')
+  onTap() {
     console.debug('SegmentButton, select', this.value);
     this.ionSelect.emit(this);
   }
